@@ -7,7 +7,7 @@ export default function Home() {
       <div className="hero">
         <div>
           <p className="eyebrow">Private Psychiatry Practice</p>
-          <h1>Psychiatry and psychotherapy in the Bay Area and across California.</h1>
+          <h1>Psychiatry and psychotherapy, thoughtfully delivered.</h1>
           <p className="lead">{profileParagraphs[0]}</p>
           <div className="hero-actions">
             <Link className="button primary" to="/contact">

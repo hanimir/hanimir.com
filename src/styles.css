@@ -117,20 +117,20 @@ body {
   max-width: 1120px;
   width: 100%;
   margin: 0 auto;
-  padding: 52px 24px 80px;
+  padding: 64px 24px 104px;
 }
 
 .page {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 50px;
 }
 
 .page-header {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-width: 680px;
+  gap: 16px;
+  max-width: 760px;
 }
 
 .page-header h1 {
@@ -149,7 +149,7 @@ body {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
-  gap: 34px;
+  gap: 52px;
   align-items: start;
 }
 
@@ -159,34 +159,34 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--ink-muted);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 h1 {
   font-family: "Newsreader", serif;
-  font-size: clamp(42px, 6vw, 66px);
-  line-height: 1.02;
+  font-size: clamp(40px, 5.2vw, 60px);
+  line-height: 1.06;
   letter-spacing: -0.01em;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .lead {
-  font-size: 20px;
+  font-size: 19px;
   color: var(--ink-muted);
-  max-width: 620px;
-  line-height: 1.55;
+  max-width: 700px;
+  line-height: 1.72;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 28px;
+  margin-top: 34px;
 }
 
 .hero-card {
   background: var(--surface);
-  padding: 28px;
+  padding: 30px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
@@ -205,7 +205,7 @@ h1 {
 }
 
 .hero-meta {
-  margin-top: 6px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -218,7 +218,7 @@ h1 {
   background: var(--surface-soft);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 14px 16px;
 }
 
 .meta-row span {
@@ -258,24 +258,24 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 18px;
+  gap: 24px;
 }
 
 .stack {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
 }
 
 .card {
   background: var(--surface);
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  padding: 24px;
+  padding: 32px;
   box-shadow: 0 8px 20px rgba(15, 45, 68, 0.06);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 .card h3 {
@@ -287,7 +287,7 @@ h1 {
 .card p {
   color: var(--ink-muted);
   font-size: 17px;
-  line-height: 1.55;
+  line-height: 1.7;
 }
 
 .project {
@@ -324,14 +324,14 @@ h1 {
 .note {
   background: var(--surface-soft);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 32px;
   border: 1px solid var(--line);
 }
 
 .note h3 {
   font-family: "Newsreader", serif;
   font-size: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .note p {
@@ -343,7 +343,7 @@ h1 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .list li {
@@ -368,13 +368,13 @@ h1 {
 }
 
 .longform {
-  gap: 18px;
+  gap: 20px;
   max-width: 900px;
 }
 
 .longform p {
   font-size: 18px;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .footer {
@@ -407,6 +407,7 @@ h1 {
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .nav-links {
@@ -425,12 +426,22 @@ h1 {
   }
 
   .main {
-    padding-top: 40px;
+    padding-top: 44px;
+    padding-bottom: 72px;
   }
 
   .page-header p,
   .lead {
     font-size: 18px;
+  }
+
+  .page {
+    gap: 34px;
+  }
+
+  .card,
+  .note {
+    padding: 24px;
   }
 
   .project {
