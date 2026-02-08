@@ -2,10 +2,22 @@
 
 Simple React + TypeScript resume site.
 
+## Environment
+
+This repo is pinned to:
+- Node `22.12.0` (`.nvmrc`, `.node-version`, `.tool-versions`)
+- npm `>=10`
+
+One-time setup:
+
+```bash
+npm run setup
+```
+
 ## Commands
 
 ```bash
-npm install
+npm run check:env
 npm run dev
 npm run build
 npm run preview
