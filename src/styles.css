@@ -73,3 +73,28 @@ hr {
 .page-break {
   page-break-before: always;
 }
+
+.landing {
+  text-align: center;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.ratings-page {
+  padding: 1rem;
+}
+
+.ratings-table {
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.ratings-table th,
+.ratings-table td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  text-align: left;
+}
