@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-inner">
         <span>© {new Date().getFullYear()} Hanimir Psychiatry</span>
         <span className="dot" aria-hidden="true" />
-        <span>Evidence-based psychiatric care, in person and telehealth.</span>
+        <span>San Francisco Bay Area and telehealth throughout California.</span>
       </div>
     </footer>
   );

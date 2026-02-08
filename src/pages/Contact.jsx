@@ -4,34 +4,38 @@ export default function Contact() {
       <div className="page-header">
         <h1>Contact</h1>
         <p>
-          Reach out for consultation availability, scheduling, and questions
-          about fit. We aim to respond quickly and clearly.
+          To inquire about consultation availability, please reach out by email.
+          Include your preferred times and whether you are seeking in-person or
+          telehealth care.
         </p>
       </div>
 
       <div className="grid">
-        <div className="card contact-card">
+        <article className="card contact-card">
           <h3>Email</h3>
           <p>care@hanimir.com</p>
           <p>For new patient inquiries and scheduling.</p>
-        </div>
-        <div className="card contact-card">
-          <h3>Office Hours</h3>
-          <p>Monday-Friday</p>
-          <p>9:00 AM-5:00 PM</p>
-        </div>
-        <div className="card contact-card">
-          <h3>Location</h3>
-          <p>Private office visits by appointment</p>
-          <p>Secure telehealth available statewide</p>
-        </div>
+        </article>
+
+        <article className="card contact-card">
+          <h3>Office</h3>
+          <p>San Francisco Bay Area</p>
+          <p>In-person appointments by arrangement.</p>
+        </article>
+
+        <article className="card contact-card">
+          <h3>Telehealth</h3>
+          <p>Available throughout California</p>
+          <p>Secure video visits for established care.</p>
+        </article>
       </div>
 
       <div className="note">
-        <h3>Start Here</h3>
+        <h3>Consultation Requests</h3>
         <p>
-          Include your preferred appointment times and whether you are seeking
-          in-person or telehealth care. We will follow up with next steps.
+          Briefly share what you are seeking support for, current treatment if
+          any, and your scheduling preferences. Responses are typically sent
+          within 1-2 business days.
         </p>
       </div>
     </section>
