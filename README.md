@@ -14,6 +14,8 @@ One-time setup:
 npm run setup
 ```
 
+After setup, all npm scripts (`dev`, `build`, `lint`, `preview`) auto-switch to the pinned Node version through `nvm`.
+
 ## Commands
 
 ```bash

@@ -1,3 +1,5 @@
+import { execSync } from 'node:child_process'
+
 const minNode = [20, 19, 0]
 const minNpm = [10, 0, 0]
 
@@ -14,7 +16,8 @@ const gte = (actual, min) => {
 }
 
 const node = parse(process.version)
-const npm = parse(process.env.npm_config_user_agent?.match(/npm\/([\d.]+)/)?.[1] ?? '0.0.0')
+const npmVersion = execSync('npm --version', { encoding: 'utf8' }).trim()
+const npm = parse(npmVersion)
 
 if (!gte(node, minNode)) {
   console.error(
