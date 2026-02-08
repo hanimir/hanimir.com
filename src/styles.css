@@ -52,9 +52,24 @@ hr {
   font-size: 1em;
 }
 
+.description > ul {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.5em;
+}
+
+.description > ul > li {
+  margin-top: 0.34em;
+  margin-bottom: 0.34em;
+}
+
 .contact > p,
-.description > p,
 .metadata > p {
   margin-top: 0.17em;
   margin-bottom: 0.17em;
+}
+
+.page-break {
+  page-break-before: always;
 }
